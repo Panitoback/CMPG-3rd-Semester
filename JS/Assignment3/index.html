@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Juicy Smothiesss</h1>
+    <form action="#" method="GET" id="form">
+        <div class="grid-container">
+            <div class="row1 card">
+                <h2>Size</h2>
+                <div class="options">
+                    <input type="radio" id="small" name="size" value="small">
+                    <label for="small">Small</label>
+                    <input type="radio" id="medium" name="size" value="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large</label>
+                </div>
+            </div>
+        
+            <div class="row1 card">
+                <h2>Flavour</h2>
+                <div class="options">
+                    <select id="flavour" name="flavour">
+                        <option value="vanilla">Vanilla</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="mango">Mango</option>
+                        <option value="blueberry">Blueberry</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="row2 card">
+                <h2>Eat here or Take away?</h2>
+                <div class="options">
+                    <input type="radio" id="eat_here" name="order_type" value="eat_here">
+                    <label for="eat_here">Eat here</label>
+                    <input type="radio" id="take_away" name="order_type" value="take_away">
+                    <label for="take_away">Take away</label>
+                </div>
+            </div>
+            
+            <div class="row2 card">
+                <h2>Milk Type</h2>
+                <div class="options">
+                    <input type="radio" id="cow_milk" name="milk_type" value="cow_milk">
+                    <label for="cow_milk">Cow Milk</label>
+                    <input type="radio" id="almond_milk" name="milk_type" value="almond_milk">
+                    <label for="almond_milk">Almond Milk</label>
+                    <input type="radio" id="oat_milk" name="milk_type" value="oat_milk">
+                    <label for="oat_milk">Oat Milk</label>
+                </div>
+            </div>
+
+            <div class="row3 card">
+                <input type="submit" value="ORDER">
+            </div>
+            <div class="row4 card">
+                <h2>Your order was...</h2>
+                <p id="order-summary"></p>
+            </div>
+        </div>
+    </form>
+
+    <footer>Made by: Esteban Salazar Correa</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

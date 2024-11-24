@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(smothie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 80px;
+    color: rgb(56, 192, 192);
+}
+
+#form{
+    width: 80vw;
+    height: 60vh;
+    background-color: beige;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 30% 30% 10% 30%; 
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    letter-spacing: 3px;
+}
+
+.options{
+    display: flex;
+    min-width: 70%;
+    justify-content: space-around;
+}
+
+
+.row1, .row2 {
+    padding: 10px;
+}
+
+.row3, .row4 {
+    padding: 10px;
+    grid-column: span 2; 
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+input[type="submit"] {
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(255, 85, 0);
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bolder;
+}
